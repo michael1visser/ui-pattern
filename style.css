@@ -24,6 +24,7 @@ main{
     grid-template-columns: 1fr 1fr 1fr 1fr ; */
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     /* row-gap: 2%;
     column-gap: 2%; */
     width: 70%;
@@ -32,12 +33,15 @@ main{
 
 .character-card{
     
-    padding: 1%;
-    margin: 3%;
+    padding: 10% 6%;
+    margin: 1%;
     text-align: center;
-    /* background-image: url(https://www.superherodb.com/pictures2/portraits/10/100/731.jpg); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     
 }
+
 
 #modal{
     background-color: black;
