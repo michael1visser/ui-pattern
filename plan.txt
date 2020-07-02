@@ -1,0 +1,77 @@
+UI PATTERN PLAN
+
+Create a modal UI of Batman villains.
+
+If possible, style to look like the "bat-computer"
+
+API: https://superheroapi.com/
+
+API KEY:Stored
+
+**VILLAINS**
+Joker - 370
+DeathStroke - 216
+Poison Ivy - 522
+Zsasz - 461
+KillerCroc - 386
+Scarecrow - 576
+Bane - 60
+Catwoman - 165
+Mr. Freeze - 457
+Ra's Al Ghul - 538
+Red Hood - 546
+Man-Bat - 427
+Penguin - 514
+Riddler - 558
+Harley Quinn - 309
+Deadshot - 214
+
+** STEP ONE: CREATE HTML SKELETON
+
+* HTML Elements Needed * 
+
+modal - Modal window that appears when user clicks on one of the rogues. Create single modal and populate with correct info on cick.
+    Items - character name
+        - Real name
+        - image
+        -First Appearance
+        - Aliases
+        -Hair/Eye Color
+        -Height/Weight
+        -Known associates?
+
+
+grid card - Simple card w/ background image and character name overlaid.
+
+card grid - grid on main page for arranging cards
+
+
+** STEP TWO: ADD JS **
+
+*Functions*
+
+display modal - displays modal
+
+close modal - changes modal display to none
+
+populate modal - populates modal elements with info for selected character
+
+api calls - set up single function with root call and variable for each character's Id. Use to set photo in grid and info in modal.
+
+*Variables*
+
+characters - nodelist
+
+modal
+
+
+** STEP 3: STYLE **
+
+Add background to look like bat-computer. Potentially monitor inside bg image of cave.
+
+Make modal look like an old card catalog card
+
+add shaddow and resize on mouseover to animate  
+
+Add fonts and borders etc...
+

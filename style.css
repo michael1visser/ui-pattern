@@ -1,0 +1,51 @@
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    padding: 5%;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#character-grid {
+    /* display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr ; */
+    display: flex;
+    flex-wrap: wrap;
+    /* row-gap: 2%;
+    column-gap: 2%; */
+    width: 70%;
+
+}
+
+.character-card{
+    
+    padding: 1%;
+    margin: 3%;
+    text-align: center;
+    /* background-image: url(https://www.superherodb.com/pictures2/portraits/10/100/731.jpg); */
+    
+}
+
+#modal{
+    background-color: black;
+    width: 60%;
+    height: 50vh;
+    position: fixed;
+    align-self: center;
+    transform: translate3d(0, 10%, 0);
+    /* transition-delay: 3s; */
+    display: none;
+}
