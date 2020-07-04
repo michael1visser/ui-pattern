@@ -63,21 +63,7 @@ function setCard(baseURL, ids){
 
 setCard(baseURL, characterIds)
 
-
-
-
-function popModal(e) {
-    e.preventDefault()
-
-    document.removeEventListener("click", hideModal)
-
-    let modal = document.querySelector("#modal")
-
-   //console.log(e)
-   if (e.target.className == "character-card"){
-    let charId = e.target.dataset.id 
-    //console.log(charId)
-
+function modalDeets(e, charId, image){
     fetch(`${baseURL}${charId}/biography`)
         .then(res => res.json())
         .then(res => {
@@ -86,7 +72,7 @@ function popModal(e) {
             //console.log(aliases)
 
             //console.log(e.target.style.backgroundImage)
-            modalImg.style.backgroundImage = e.target.style.backgroundImage
+            modalImg.style.backgroundImage = image
             charName.innerHTML = res.name
             realName.innerHTML = `Real Name: ${res["full-name"]}`
             firstApp.innerHTML = `First Appearance: ${res["first-appearance"]}`
@@ -148,6 +134,32 @@ function popModal(e) {
         })
 
         
+}
+
+
+function popModal(e) {
+    e.preventDefault()
+
+    document.removeEventListener("click", hideModal)
+
+    let modal = document.querySelector("#modal")
+
+   //console.log(e)
+   if (e.target.className == "character-card" ){
+    
+    let charId = e.target.dataset.id 
+    
+    let image = e.target.style.backgroundImage
+    
+    modalDeets(e, charId, image)
+   }
+   else if (e.target.parentElement.className == "character-card"){
+
+    let charId = e.target.parentElement.dataset.id
+    
+    let image = e.target.parentElement.style.backgroundImage
+    
+    modalDeets(e, charId, image)
     }
 }
 
@@ -158,11 +170,7 @@ function hideModal(e){
     if(e.target.closest("#character-grid") || e.target == document.querySelector("#close-button")){
         console.log("Removed")
         
-      
-        window.setTimeout( () =>{
-            modal.style.opacity = "0"
-            
-        }, 100)
+            modal.style.opacity = "0"    
 
         window.setTimeout( () =>{
             modal.style.display = "none"
