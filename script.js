@@ -139,6 +139,13 @@ function popModal(e) {
         .then(res => {
             modal.style.display = "block"
         })
+        .then((res) =>{
+            
+            window.setTimeout( () =>{
+            modal.style.opacity = "1"
+        }, 100)
+
+        })
 
         
     }
@@ -152,12 +159,19 @@ function hideModal(e){
         console.log("Removed")
         
       
-        
-        modal.style.display = "none"
+        window.setTimeout( () =>{
+            modal.style.opacity = "0"
+            
+        }, 100)
 
-        akaList.innerHTML = ""
-        statsList.innerHTML = ""
+        window.setTimeout( () =>{
+            modal.style.display = "none"
+            akaList.innerHTML = ""
+            statsList.innerHTML = ""
+        }, 600)
+
         
+
         document.removeEventListener("click", hideModal)
         
         

@@ -1,6 +1,6 @@
 body {
     background-color: #000000;
-    background-image: url(https://o.aolcdn.com/images/dims?quality=95&image_uri=https%3A%2F%2Fs.yimg.com%2Fuu%2Fapi%2Fres%2F1.2%2F5n6DvT5dyP3WPixtRBhCVw--%7EB%2FaD03MDM7dz0xNDAwO2FwcGlkPXl0YWNoeW9u%2Fhttps%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F6a8a1ebcb1514d2f462430590dbe98d8%2F203601368%2Fwayne-residence-1400.jpg&client=amp-blogside-v2&signature=f12c2ce1557c77c14726f8bd45cb6a90e666d4d1);
+    background-image: url(https://vignette.wikia.nocookie.net/telltalebatman/images/0/02/The_Batcave_%28Telltale_Version%29.jpg/revision/latest?cb=20191125054200);
     background-size: contain;
     box-sizing: border-box;
     width: 100vw;
@@ -47,8 +47,6 @@ main{
     
     min-width: 10%;
     max-width:10%;
-    /* min-height: 58%;
-    max-height: 28%; */
     padding: 5% 2%;
     margin: 1%;
     text-align: center;
@@ -88,8 +86,12 @@ h3{
     position: absolute;
     align-self: center;
     transform: translate3d(0, -3%, 0);
-    /* transition-delay: 3s; */
+    opacity: 0;
+    transition: opacity .5s;
+    overflow: auto;
+    
 }
+
 
 #close-button {
     position: fixed;
