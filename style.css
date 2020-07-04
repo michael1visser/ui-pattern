@@ -26,7 +26,7 @@ h1{
 }
 
 main{
-    width: 90%;
+    width: 80%;
     margin-bottom: 2%;
     
     display: flex;
@@ -51,15 +51,13 @@ main{
     border-radius: 5%;
 
 }
-.highlighted {
-    boxShadow:10px 5px 5px #00E500;
-}
+
 
 .character-card{
     
     min-width: 10%;
     max-width:10%;
-    padding: 5% 2%;
+    padding: 4% 2%;
     margin: 1%;
     text-align: center;
     background-size: cover;
@@ -67,6 +65,7 @@ main{
     background-position: center;
     border: 1px solid #00E500;
     border-radius: 5px;
+    cursor: pointer;
     
 
     font-family: 'VT323', 'Courier New', Courier, monospace;
@@ -83,6 +82,7 @@ h3{
     font-size: 95%;
     line-height: 90%;
     margin: none;
+    cursor: pointer;
 
     overflow-wrap: break-word;
 }
@@ -115,6 +115,7 @@ h3{
     font-size: 16px;
     font-weight: bold;
     text-align: right;
+    cursor: pointer;
 }
 
 #modal-content{
