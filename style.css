@@ -1,5 +1,7 @@
 body {
     background-color: #000000;
+    background-image: url(https://o.aolcdn.com/images/dims?quality=95&image_uri=https%3A%2F%2Fs.yimg.com%2Fuu%2Fapi%2Fres%2F1.2%2F5n6DvT5dyP3WPixtRBhCVw--%7EB%2FaD03MDM7dz0xNDAwO2FwcGlkPXl0YWNoeW9u%2Fhttps%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F6a8a1ebcb1514d2f462430590dbe98d8%2F203601368%2Fwayne-residence-1400.jpg&client=amp-blogside-v2&signature=f12c2ce1557c77c14726f8bd45cb6a90e666d4d1);
+    background-size: contain;
     box-sizing: border-box;
     width: 100vw;
     display: flex;
@@ -7,6 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     color: #00E500;
+    
 }
 
 header{
@@ -14,11 +17,16 @@ header{
 }
 
 main{
-    width: 100%;
+    width: 90%;
+    margin-bottom: 2%;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(monitor.png);
+    background-size: 100% 100%;
+    
 }
 
 #character-grid {
@@ -26,7 +34,12 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 85%;
+    width: 95%;
+    margin: 3% 0;
+    background-image: url("https://www.desktopbackground.org/p/2015/08/14/994883_full-fledged-customizable-fallout-terminal-rainmeter_1920x1080_h.jpg");
+    background-size: 200%;
+    background-position: center;
+    border-radius: 5%;
 
 }
 
@@ -72,9 +85,9 @@ h3{
     border-radius: 30px;
     width: 60%;
     max-height: 75vh;
-    position: fixed;
+    position: absolute;
     align-self: center;
-    transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -3%, 0);
     /* transition-delay: 3s; */
 }
 
