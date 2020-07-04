@@ -20,6 +20,8 @@ let firstApp = document.querySelector("#first-app")
 
 let akaList = document.querySelector("#aka")
 
+let statsList = document.querySelector("#stats")
+
 /* let id = 370
 console.log(`${baseURL}${id}`) */
 
@@ -104,7 +106,7 @@ function popModal(e) {
             
             let stats = [`Combat: ${res.combat}`,`Intelligence ${res.intelligence}`,`Power: ${res.power}`,`Speed: ${res.speed}`,`Strength ${res.strength}`]
 
-            let statsList = document.querySelector("#stats")
+            //let statsList = document.querySelector("#stats")
 
             stats.forEach(n =>{
                 let item = document.createElement("li")
@@ -147,12 +149,15 @@ function hideModal(e){
     e.preventDefault()
 
     if(e.target.closest("#character-grid") || e.target == document.querySelector("#close-button")){
-        
         console.log("Removed")
         
       
         
         modal.style.display = "none"
+
+        akaList.innerHTML = ""
+        statsList.innerHTML = ""
+        
         document.removeEventListener("click", hideModal)
         
         
