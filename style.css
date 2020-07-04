@@ -2,7 +2,8 @@ body {
     font-family: 'VT323', 'Courier New', Courier, monospace;
     background-color: #000000;
     background-image: url(https://vignette.wikia.nocookie.net/telltalebatman/images/0/02/The_Batcave_%28Telltale_Version%29.jpg/revision/latest?cb=20191125054200);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     box-sizing: border-box;
     width: 100vw;
     display: flex;
