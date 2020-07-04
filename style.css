@@ -51,6 +51,9 @@ main{
     border-radius: 5%;
 
 }
+.highlighted {
+    boxShadow:10px 5px 5px #00E500;
+}
 
 .character-card{
     
@@ -64,6 +67,7 @@ main{
     background-position: center;
     border: 1px solid #00E500;
     border-radius: 5px;
+    
 
     font-family: 'VT323', 'Courier New', Courier, monospace;
     color: #000000;

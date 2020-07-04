@@ -39,6 +39,7 @@ function setCard(baseURL, ids){
                 //console.log(res.url)
                 let card = document.createElement("div")
                 let name = document.createElement("h3")
+                name.classList.add("char-card-name")
                 card.classList.add("character-card")
                 card.dataset.id = n
                 name.innerText = res.name
@@ -62,6 +63,20 @@ function setCard(baseURL, ids){
 }
 
 setCard(baseURL, characterIds)
+
+document.addEventListener("mouseover", (e) =>{
+    if(e.target.className == "character-card" || (e.target.className == "char-card-name")){
+        e.target.style.color = "#ffffff"
+        e.target.firstElementChild.style.color = "#ffffff"
+    }
+})
+
+document.addEventListener("mouseout", (e) =>{
+    if(e.target.className == "character-card"){
+        //e.target.classList.add("highlighted")
+        e.target.firstElementChild.style.color = "#000000"
+    }
+})
 
 function modalDeets(e, charId, image){
     fetch(`${baseURL}${charId}/biography`)
