@@ -46,7 +46,8 @@ main{
     justify-content: center;
     width: 95%;
     margin: 3% 0;
-    background-image: url(https://www.desktopbackground.org/p/2015/08/14/994883_full-fledged-customizable-fallout-terminal-rainmeter_1920x1080_h.jpg);
+    background-color: #000000;
+    background-image: url(https://www.desktopbackground.org/download/1024x768/2015/08/14/994883_full-fledged-customizable-fallout-terminal-rainmeter_1920x1080_h.jpg);
     background-size: 200%;
     background-position: center;
     border-radius: 5%;
@@ -90,7 +91,8 @@ h3{
 
 #modal {
     display: none;
-    background-image: url(https://www.desktopbackground.org/p/2015/08/14/994883_full-fledged-customizable-fallout-terminal-rainmeter_1920x1080_h.jpg);
+    background-color: #000000;
+    background-image: url(https://www.desktopbackground.org/download/1024x768/2015/08/14/994883_full-fledged-customizable-fallout-terminal-rainmeter_1920x1080_h.jpg);
     background-size: 200%;
     background-position: center;
     border: 5px solid #00E500;
