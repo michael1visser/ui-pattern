@@ -9,6 +9,17 @@ let baseURL = 'https://www.superheroapi.com/api.php/10108022590356420/'
 let cards
 
 let grid = document.querySelector("#character-grid")
+
+let modalImg = document.querySelector(".modal-img")
+
+let charName = document.querySelector("#char-name")
+
+let realName = document.querySelector("#real-name")
+
+let firstApp = document.querySelector("#first-app")
+
+let akaList = document.querySelector("#aka")
+
 /* let id = 370
 console.log(`${baseURL}${id}`) */
 
@@ -61,22 +72,13 @@ function popModal(e) {
     let modal = document.querySelector("#modal")
 
    //console.log(e)
-   if (e.target.className = "character-card"){
+   if (e.target.className == "character-card"){
     let charId = e.target.dataset.id 
     //console.log(charId)
 
     fetch(`${baseURL}${charId}/biography`)
         .then(res => res.json())
         .then(res => {
-
-            //console.log(res)
-            
-            let modalImg = document.querySelector(".modal-img")
-            let charName = document.querySelector("#char-name")
-            let realName = document.querySelector("#real-name")
-            let firstApp = document.querySelector("#first-app")
-            let akaList = document.querySelector("#aka")
-            
         
             let aliases = res.aliases
             //console.log(aliases)
@@ -144,19 +146,14 @@ function popModal(e) {
 function hideModal(e){
     e.preventDefault()
 
-    console.log("Removed")
-
-
-
-    if(e.target.closest("#character-grid")){
-        //console.log("running")
+    if(e.target.closest("#character-grid") || e.target.closest("main") || e.target.closest("body")){
         
+        console.log("Removed")
       
         
         modal.style.display = "none"
         document.removeEventListener("click", hideModal)
         
-        console.log(cards)
         
         cards.forEach(n =>{
             n.addEventListener("click", popModal)
