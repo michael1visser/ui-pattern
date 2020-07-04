@@ -126,11 +126,14 @@ function popModal(e) {
                 
             })
         })
+        .then(res => {
+            modal.style.display = "block"
+        })
 
         
     }
 
-    modal.style.opacity = 1
+    
     
     
 
