@@ -54,10 +54,15 @@ main{
 
 h3{
     font-family: 'VT323', 'Courier New', Courier, monospace;
-    color: #00E500;
+    color: #000000;
+    background-color: #00E500;
     font-size: 28px;
+    line-height: 24px;
+    margin: none;
     stroke: #ffffff;
     stroke-width: 2px;
+
+    overflow-wrap: break-word;
 }
 
 #modal {
@@ -71,6 +76,17 @@ h3{
     align-self: center;
     transform: translate3d(0, -10%, 0);
     /* transition-delay: 3s; */
+}
+
+#close-button {
+    position: fixed;
+
+    margin: 1% 0 0 96%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
 }
 
 #modal-content{

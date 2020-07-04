@@ -146,9 +146,10 @@ function popModal(e) {
 function hideModal(e){
     e.preventDefault()
 
-    if(e.target.closest("#character-grid") || e.target.closest("main") || e.target.closest("body")){
+    if(e.target.closest("#character-grid") || e.target == document.querySelector("#close-button")){
         
         console.log("Removed")
+        
       
         
         modal.style.display = "none"
