@@ -6,6 +6,8 @@ let characterIds = [370, 216, 522, 461, 386, 576, 60, 165, 457, 538, 546, 427, 5
 
 let baseURL = 'https://www.superheroapi.com/api.php/10108022590356420/'
 
+let cards
+
 let grid = document.querySelector("#character-grid")
 /* let id = 370
 console.log(`${baseURL}${id}`) */
@@ -35,16 +37,20 @@ function setCard(baseURL, ids){
                 grid.appendChild(card)
                 card.addEventListener("click", popModal)
             })
+            .then(res => {
+                cards = document.querySelectorAll(".character-card")
+                console.log(cards)
+            })
             .catch(err =>{
                 console.log(`oops!: ${err}`)
             })
-
-        
     }) 
+   
 }
 
 setCard(baseURL, characterIds)
-let cards = document.querySelectorAll(".character-card")
+
+
 
 
 function popModal(e) {
@@ -132,12 +138,6 @@ function popModal(e) {
 
         
     }
-
-    
-    
-    
-
-    
 }
 
 
@@ -153,7 +153,7 @@ function hideModal(e){
         
       
         
-        modal.style.opacity = 0
+        modal.style.display = "none"
         document.removeEventListener("click", hideModal)
         
         console.log(cards)
