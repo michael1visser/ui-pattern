@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <title>Batman's Rogues Gallery</title>
     <link rel="stylesheet" href="style.css">
 
@@ -16,7 +17,27 @@
         <div id="character-grid">
             
         </div>
-        <div id="modal">content</div>
+        <div id="modal">
+            <div class="modal-img"></div>
+            <div class="modal-header">
+                <h2 id="char-name"></h2>
+                <h2 id="real-name"></h2>
+                <h4 id="first-app"></h4>
+            </div>
+            <div class="modal-lists">
+                <div class="list">
+                    <h4>Fighting Ability</h4>
+                    <ul id="stats"></ul>
+                </div>
+                <div class="list">
+                    <h4>Also Known As</h4>
+                    <ul id="aka"></ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <h4 id="deets"></h4>
+            </div>
+        </div>
     </main>
 </body>
 <script src="script.js"></script>

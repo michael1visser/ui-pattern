@@ -1,9 +1,12 @@
 body {
+    background-color: #000000;
+    box-sizing: border-box;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #00E500;
 }
 
 header{
@@ -19,37 +22,94 @@ main{
 }
 
 #character-grid {
-    /* display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr ;
-    grid-template-columns: 1fr 1fr 1fr 1fr ; */
+   
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    /* row-gap: 2%;
-    column-gap: 2%; */
-    width: 70%;
+    justify-content: center;
+    width: 85%;
 
 }
 
 .character-card{
     
-    padding: 10% 6%;
+    min-width: 10%;
+    max-width:10%;
+    /* min-height: 58%;
+    max-height: 28%; */
+    padding: 5% 2%;
     margin: 1%;
     text-align: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    font-family: 'VT323', 'Courier New', Courier, monospace;
+    color: #00E500;
+    font-size: 28px;
+    stroke: #ffffff;
+    stroke-width: 2px;
+
     
+}
+
+h3{
+    font-family: 'VT323', 'Courier New', Courier, monospace;
+    color: #00E500;
+    font-size: 28px;
+    stroke: #ffffff;
+    stroke-width: 2px;
 }
 
 
 #modal{
-    background-color: black;
+    background-color: #000000;
+    border: 5px solid #00E500;
+    border-radius: 30px;
     width: 60%;
-    height: 50vh;
+    max-height: 75vh;
     position: fixed;
     align-self: center;
-    transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, -10%, 0);
     /* transition-delay: 3s; */
-    display: none;
+    opacity: 0;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr .5fr;
+    grid-template-columns: 2fr 3fr 2fr;
+}
+
+.modal-img{
+    grid-row: 1 / span 2;
+    grid-column: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-top-left-radius: 25px;
+}
+
+.modal-header{
+    grid-row: 1;
+    grid-column: 2 / span 2;
+    padding: 0 3%;
+}
+
+.modal-lists {
+    grid-row: 2;
+    grid-column: 2 / span 2;
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 2%;
+}
+
+.modal-footer {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+    margin: 0 5%;
+    
 }

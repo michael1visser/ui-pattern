@@ -27,8 +27,7 @@ Harley Quinn - 309
 Deadshot - 214
 Clock King - 181
 Two Face - 678
-Darkseid - 204
-Lex Luthor - 405
+
 
 ** STEP ONE: CREATE HTML SKELETON
 
