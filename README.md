@@ -3,7 +3,7 @@
 
 ## Introduction 
 
-Batman's Rogues Gallery is a UI Modal interface featuring some of the most famous (and some not so famous) villains of Gotham City
+Batman's Rogues Gallery is a UI Modal interface featuring some of the most famous (and some not so famous) villains of Gotham City.
 
 ## Prerequisites
 
@@ -11,7 +11,7 @@ The gallery is best viewed in the Google Chrome browser.
 
 ## Installation
 
-To install Game of WAR! download all repo files to your computer. Be sure to save them in the same directory (aka folder).
+To install the gallery, download all repo files to your computer. Be sure to save them in the same directory (aka folder).
 
 Open index.html in Chrome.
 
@@ -19,7 +19,7 @@ Open index.html in Chrome.
 
 To interact with the gallery, hover over the card featuring the villain about whom you would like more information and click the card. A modal with more detail about the villain will display. 
 
-To close the modal, click the "X" at the top right of the modal or simply click anywhere in the gallery window.
+To close the modal, click the "X" at the top right of the modal or simply click anywhere inside the computer terminal.
 
 ## Acknowledgements
 
